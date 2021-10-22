@@ -1,0 +1,299 @@
+/*=============================================
+=            Color personalizado              =
+=============================================*/
+.bg-purple, .btn-purple{
+	background: #727cb6;
+	color: white;
+}
+
+.card-purple{
+	border-top: 3px solid #727cb6;
+}
+
+.text-purple{
+	color: #727cb6;
+}
+
+/*=============================================
+=            Deslizador de videos             =
+=============================================*/
+.slide-area li a figure{
+	position: relative;
+}
+
+.slide-area li a figure.activado::before{
+	position: absolute;
+	content: "\f144";
+	font-family: "Font Awesome 5 Free";
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	width: 46px;
+	line-height: 46px;
+	background: rgba(0, 0, 0, .7);
+	top: 50%;
+	margin-top: -23px;
+	left:  50%;
+	margin-left: -23px;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.slide-area li a figure.desactivado::before{
+	position: absolute;
+	content: "Activar suscripción";
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	width: 200px;
+	line-height: 70px;
+	background: rgba(0, 0, 0, .7);
+	top: 50%;
+	margin-top: -35px;
+	left:  50%;
+	margin-left: -100px;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.slide-area li a figure.activado img{
+	opacity: 1;
+}
+
+.slide-area li a figure.desactivado img{
+	opacity: .5;
+}
+
+/*=============================================
+=            Formulario suscripción           =
+=============================================*/
+input[type="checkbox"]{
+	display: none;
+}
+
+label[for="aceptarTerminos"] span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #E9ECEF;
+	vertical-align: middle;
+	border-radius: 100%;
+	margin-right: 5px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label[for="aceptarTerminos"] span{
+	background: url(../img/plantilla/check.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#signatureparent{
+	width: 300px;
+	border-bottom: 2px solid #333;
+}
+
+/*=============================================
+=                  Videos                     =
+=============================================*/
+.videos .visorVideos{
+	position: relative;
+	width: 75%;
+	background: black;
+}
+
+.videos .visorVideos video{
+	width: 100%;
+	height: 100vh;
+}
+
+.videos .visorVideos h5{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.6);
+	z-index: 100;
+}
+
+.videos .visorVideos h5 .velocidadVideo{
+	color: white;
+	cursor: pointer;
+}
+
+.videos .visorVideos h5 .velocidadVideo .dropdown-menu{
+	background: rgba(0, 0, 0, .7);
+	min-width: 0rem !important;
+}
+
+.videos .visorVideos h5 .velocidadVideo .dropdown-menu a{
+	color: white;
+}
+
+.videos .visorVideos h5 .velocidadVideo .dropdown-menu a:hover{
+	background: black;
+}
+
+.videos .visorVideos .fa-bars{
+	position: absolute;
+	top: 0;
+	width: 55px;
+	line-height: 55px;
+	z-index: 1000;
+	right: 0px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	font-size: 22px;
+	text-shadow: 0px 0px 2px #000;
+	background: rgba(0, 0, 0, .5);
+}
+
+.videos .botonesVideos{
+	width: 25%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: white;
+	z-index: 100;
+	overflow-y: scroll;
+}
+
+.videos .botonesVideos::-webkit-scrollbar{
+	width: 12px;
+}
+
+.videos .botonesVideos::-webkit-scrollbar-track{
+	-webkit-box-shadow:  inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+
+.videos .botonesVideos::-webkit-scrollbar-thumb{
+	-webkit-box-shadow:  inset 0 0 6px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+.videos .botonesVideos ul li img{
+	width: 60px;
+	height: 35px;
+}
+
+/*=============================================
+=               Pinterest Grid               =
+=============================================*/
+.grid{
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+}
+
+.grid img{
+	width: 100%;
+	min-width: 100%;
+	height: auto;
+}
+
+.grid .white-panel{
+	position: absolute;
+	background: white;
+	padding: 10px;
+}
+
+.grid .white-panel h1{
+	font-size: 1em;
+}
+
+.grid .white-panel h1 a{
+	color: #a92733;
+}
+
+.grid .white-panel:hover{
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	margin-top: -5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/*=============================================
+=              Grafico multinivel             =
+=============================================*/
+#summary.tree_main{
+	overflow: hidden;
+	position: relative;
+}
+
+.tablaGanancias{
+	position: absolute;
+	right: 19px;
+	top:  50px;
+	z-index: 1000;
+	display: none;
+}
+
+/*=============================================
+=                   Preload                   =
+=============================================*/
+#preload{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+#preload .gif{
+	position: absolute;
+	width: 100%;
+	color: #333;
+	top: 22%;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+/*=============================================
+=                Media Querys                 =
+=============================================*/
+@media (max-width:768px) and (min-width:577px){
+	
+	.videos .visorVideos{
+		width:70%;
+	}
+
+	.videos .visorVideos h5{
+		font-size:20px;
+	}
+	
+	.videos .botonesVideos{
+		width:30%;
+	}
+
+}
+
+@media (max-width:576px){
+
+	.videos .visorVideos{
+		width:100%;
+	}
+
+	.videos .visorVideos h5{
+		font-size:14px;
+	}
+
+	.videos .visorVideos video{
+		height:auto;
+	}
+
+	.videos .botonesVideos{
+		position:relative;
+		width:100%;
+		overflow: hidden;
+	}
+
+	.videos .visorVideos .fa-bars{
+		display:none;
+	}
+
+}
