@@ -75,6 +75,9 @@ $usuario = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
   <!-- Morris -->
   <link rel="stylesheet" href="vistas/css/plugins/morris.css">
 
+  <!-- iCheck -->
+  <link rel="stylesheet" href="vistas/css/plugins/iCheck-flat-blue.css">
+
   <!--Estilos personalizados-->
   <link rel="stylesheet" href="vistas/css/style.css"> <!--Va al final para poder editar algun estilo de los plugins-->
 
@@ -145,6 +148,12 @@ $usuario = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
   <script src="vistas/js/plugins/morris.min.js"></script>
   <script src="vistas/js/plugins/raphael-min.js"></script>
 
+  <!-- CKEditor -->
+  <script src="vistas/js/plugins/ckeditor.js"></script>
+
+  <!-- iCheck https://github.com/fronteed/iCheck-->
+  <script src="vistas/js/plugins/icheck.min.js"></script>
+
 </head>
 
 <body class="hold-transition sidebar-mini sidebar-collapse">
@@ -212,5 +221,6 @@ $usuario = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 <script src="vistas/js/usuarios.js"></script>
 <script src="vistas/js/multinivel.js"></script>
 <script src="vistas/js/ingresos.js"></script>
+<script src="vistas/js/soporte.js"></script>
 </body>
 </html>
